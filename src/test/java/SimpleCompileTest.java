@@ -19,10 +19,13 @@
 
 import org.apache.lucene.util.Version;
 import org.elasticsearch.node.Node;
+import org.junit.Test;
+
 
 public class SimpleCompileTest {
 
-    public void startNode() {
+    @Test
+    public void testStartNode() {
         Node build = SimpleNodeFactory.node("foobar");
         Version.LUCENE_CURRENT.onOrAfter(Version.LUCENE_CURRENT);
         assert true;
